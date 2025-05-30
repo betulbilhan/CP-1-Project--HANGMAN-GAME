@@ -1,83 +1,83 @@
 # Hangman Game - Java Console Application 🎮
 
-Bu proje, klasik **Hangman (Adam Asmaca)** oyununu Java dilinde konsol uygulaması olarak sunar. Oyuncular kelime tahmin etmeye çalışır, skorlarını görür ve yeni kelimeler ekleyebilir.
+This project is a classic **Hangman** game implemented as a Java console application. Players try to guess hidden words, track their scores, and can add new words to the game.
 
 ---
 
-## 🚀 Özellikler
+## 🚀 Features
 
-- Kullanıcıdan kelime ekleme (belirli kurallara göre)
-- Oyun oynama:
-  - Rastgele seçilen kelimeyi harf harf tahmin etme
-  - Sınırlı tahmin hakkı
-  - Daha önce girilen harfleri kontrol etme
-- Skor görüntüleme
-- Kullanıcı dostu konsol menüsü
-
----
-
-## 📋 Kurallar
-
-- Kelimeler en az **4 harf** uzunluğunda olmalı
-- **Rakam içermemeli**
-- Aynı kelime birden fazla kez eklenemez
-- Aynı harf iki kez tahmin edilemez
+- Add custom words (with validation rules)
+- Play a new game:
+  - Guess randomly selected words letter by letter
+  - Limited number of attempts
+  - Prevent guessing the same letter twice
+- View score history
+- User-friendly console-based menu
 
 ---
 
-## 🧠 Menü Seçenekleri
+## 📋 Rules
 
-Konsol açıldığında aşağıdaki menü sunulur:
-
-- `a`: Yeni kelime(ler) ekle
-- `n`: Yeni bir oyun başlat
-- `s`: Skorları görüntüle
-- `e`: Programdan çık
+- Words must be at least **4 characters long**
+- **Numbers are not allowed** in the words
+- Duplicate words cannot be added
+- Previously guessed letters cannot be entered again
 
 ---
 
-## 💡 Oynanış
+## 🧠 Menu Options
 
-1. Önce yeni kelimeler ekleyin (`a`).
-2. Ardından bir oyun başlatın (`n`).
-3. Her yanlış harf bir hakkınızı götürür.
-4. Doğru tüm harfleri bulduğunuzda oyunu kazanırsınız.
-5. Her kazandığınız oyun size **10 puan** kazandırır.
+When the console starts, the following menu will appear:
 
----
-
-## 🛠️ Geliştirici Notları
-
-### Kullanılan Java Yapıları:
-- `ArrayList` – kelimeleri, tahminleri ve skorları tutmak için
-- `Scanner` – kullanıcıdan giriş almak için
-- `Random` – rastgele kelime seçimi için
-
-### Önemli Metotlar:
-- `DigitControl()` – rakam kontrolü
-- `Duplicate()` – tekrar eden kelime kontrolü
-- `UserGuess()` – harf tahmini
-- `Score()` – skor gösterimi
-- `DE()` – daha önce girilen harf kontrolü
+- `a`: Add new word(s)
+- `n`: Start a new game
+- `s`: Show scores
+- `e`: Exit the program
 
 ---
 
+## 💡 How to Play
 
-## 📦 Çalıştırma
-
-Bu bir **Java konsol uygulamasıdır**. Çalıştırmak için:
-
-1. `javac HangmanGame.java` komutuyla derleyin.
-2. `java HangmanGame` komutuyla çalıştırın.
+1. First, add new words to the game using `a`.
+2. Then start a new game using `n`.
+3. Each incorrect letter guess reduces your remaining attempts.
+4. Guess all the letters correctly to win the game.
+5. You earn **10 points** for each game you win.
 
 ---
 
-## 🧑‍💻 Yazar
+## 🛠️ Developer Notes
+
+### Java Structures Used:
+- `ArrayList` – used to store words, guesses, and scores
+- `Scanner` – used to get input from the user
+- `Random` – used to select a random word
+
+### Key Methods:
+- `DigitControl()` – checks if the input contains any digit
+- `Duplicate()` – checks for duplicate words
+- `UserGuess()` – handles user letter guesses
+- `Score()` – displays game scores
+- `DE()` – checks if a letter was guessed before
+
+---
+
+## 📦 How to Run
+
+This is a **Java console application**. To compile and run:
+
+1. Compile the file using:  
+   `javac HangmanGame.java`
+2. Run the program using:  
+   `java HangmanGame`
+
+---
+
+## 🧑‍💻 Author
 
 **Betül Bilhan**
 
 GitHub: [@betulbilhan](https://github.com/betulbilhan)
 
 ---
-
 
